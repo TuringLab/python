@@ -1,0 +1,6 @@
+<div class="col-md-6" ng-repeat='section in sections'>
+    <h2>{{section.title}}</h2>
+    <div class="list-group">
+        <a ng-repeat='link in section.links' href="{{link.link}}" class="list-group-item">{{link.name}}</a>
+    </div>
+</div>

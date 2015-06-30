@@ -2,31 +2,36 @@
 <head>
     <title>Python Resources</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="./app/app.module.js"></script>
+
+    <script type="text/javascript" src="./app/components/home/home.js"></script>
+    <script type="text/javascript" src="./app/components/euler/euler.js"></script>
+    <script type="text/javascript" src="./app/components/storytime/storytime.js"></script>
+    <script type="text/javascript" src="./app/components/turtle/turtle.js"></script>
+
+    <script type="text/javascript" src="./app/app.routes.js"></script>
+
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="page-header">
-                <h1>Welcome to TuringLab Python resources</h1>
-            </div>
+<body ng-app="pythonResources">
+
+    <div class="container-fluid">
+
+        <div class='page-header'>
+            <h1>
+                <a class='btn btn-default btn-lg' href="#">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            TuringLab Python resources</h1>
         </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <h2>General Python Resources</h2>
-                <ul class="list-group">
-                    <a href="./storytime.html"><li class="list-group-item">Storytime</li></a>
-                </ul>
-            </div>
-
-            <div class="col-md-6">
-                <h2>Turtle Resources</h2>
-                <ul class="list-group">
-                    <a href="./turtle-power.html"><li class="list-group-item">Turtle Power</li></a>
-                </ul>
-            </div>
+        
+        <div class="row" ng-view>
         </div>
     </div>
+
 </body>
 </html>
