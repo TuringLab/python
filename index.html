@@ -14,6 +14,9 @@
     <script type="text/javascript" src="./app/components/storytime/storytime.js"></script>
     <script type="text/javascript" src="./app/components/turtle/turtle.js"></script>
 
+    <script type="text/javascript" src="./app/shared/view/view.service.js"></script>
+    <script type="text/javascript" src="./app/shared/view/view.controller.js"></script>
+
     <script type="text/javascript" src="./app/app.routes.js"></script>
 
 </head>
@@ -26,7 +29,13 @@
                 <a class='btn btn-default btn-lg' href="#">
                     <span class="glyphicon glyphicon-home"></span>
                 </a>
-            TuringLab Python resources</h1>
+            TuringLab Python resources
+                <span class="btn-group pull-right" role="group" ng-controller='ViewController'>
+                  <button type="button" class="btn btn-default btn-lg" ng-repeat="button in buttons" ng-click="button.method()">
+                    <span ng-class="button.icon"></span>
+                  </button>
+                </span>
+            </h1>
         </div>
         
         <div class="row" ng-view>
