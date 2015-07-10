@@ -1,15 +1,47 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 4px;
+}
 
-.instruction {
+.turing-wrapper {
+    position: relative;
     width: 100%;
-    height: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.turing-bar {
+    margin: 0;
+    padding: 0px 10px;
+    overflow: auto;
+    height: 6em;
+}
+
+.turing-title {
+    position: relative;
+}
+
+.turing-content {
+    position: absolute;
+    top: 6em;
+    left: 1em;
+    right: 1em;
+    bottom: 1em;
+}
+
+.worksheet {
+    width: 100%;
+    height: 100%;
+}
+
+.trinket {
+    width: 100%;
+    height: 100%;
 }
 
 .euler {
     width: 100%;
     height:45%;
-}
-
-.trinket {
-    width: 100%;
-    height: 90%;
 }

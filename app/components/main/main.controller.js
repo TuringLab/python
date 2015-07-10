@@ -1,14 +1,13 @@
 app.controller('MainController',['$rootScope','$route',MainController]);
 
 function MainController($rootScope,$route){
-    $rootScope.$on('$routeChangeStart', function(event, current, next) { 
-        if (!next) return;
-        if (!next.$$route) return;
-        if (!next.$$route.controller) return;
-        if (next.$$route.controller == 'TurtleController') checkSave(event); 
-        if (next.$$route.controller == 'EulerController') checkSave(event); 
-        if (next.$$route.controller == 'StorytimeController') checkSave(event); 
-     });
+    // $rootScope.$on('$routeChangeStart', function(event, current, next) { 
+    //     if (!next) return;
+    //     if (!next.$$route) return;
+    //     if (!next.$$route.controller) return;
+    //     if (next.$$route.controller == 'ProjectController') checkSave(event); 
+    //     if (next.$$route.controller == 'EulerController') checkSave(event); 
+    //  });
 
 
     var checkSave = function(event){

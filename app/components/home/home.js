@@ -1,26 +1,15 @@
-app.controller('HomeController',['$scope',HomeController]);
+app.controller('HomeController',['$scope','Project',HomeController]);
 
-function HomeController($scope){
+function HomeController($scope,Project){
 
-    var eulerLinks = [];
+    $scope.projects = Project.query();
+
+    $scope.problems = [];
     for (var i=1; i<11; i++){
-        eulerLinks.push({
+        $scope.problems.push({
             name : 'Euler Problem ' + i,
             link : '#/euler/' + i
         });
     };
-
-    $scope.sections = [
-        {title: 'General ', links : [
-            {name:'Storytime', link:'#/storytime/1'}
-        ]},
-        {title: 'Turtle', links : [
-            {name:'Turtle Power', link:'#/turtle/1'}
-        ]},
-        {title: 'Project Euler', links : eulerLinks}
-    ];
-
-
-
 
 }

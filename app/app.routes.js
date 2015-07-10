@@ -1,16 +1,16 @@
 app.config(['$routeProvider',function($routeProvider){
     $routeProvider
-        .when('/euler/:eulerId', {
+        .when('/euler/:problemNumber', {
             templateUrl : './app/components/euler/euler.html',
             controller: 'EulerController'
         })
-        .when('/storytime/:storytimeId', {
-            templateUrl : './app/components/storytime/storytime.html',
-            controller: 'StorytimeController'
+        .when('/project/:projectName', {
+            templateUrl : './app/components/project/project.html',
+            controller: 'ProjectController'
         })
-        .when('/turtle/:turtleId', {
-            templateUrl : './app/components/turtle/turtle.html',
-            controller: 'TurtleController'
+        .when('/minecraft/', {
+            templateUrl : './app/components/minecraft/minecraft.html',
+            controller: 'MinecraftController'
         })
         .otherwise({
             templateUrl : './app/components/home/home.html',
