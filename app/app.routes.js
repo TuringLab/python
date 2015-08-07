@@ -8,7 +8,7 @@ app.config(['$routeProvider',function($routeProvider){
             templateUrl : './app/components/project/project.html',
             controller: 'ProjectController'
         })
-        .when('/minecraft/', {
+        .when('/minecraft/:cardName', {
             templateUrl : './app/components/minecraft/minecraft.html',
             controller: 'MinecraftController'
         })

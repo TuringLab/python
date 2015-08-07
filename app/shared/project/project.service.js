@@ -37,6 +37,12 @@ app.factory('Project', function(){
             summary: 'See a turtle spiral being created - just click run on the code',
             worksheet : 'http://www.ehow.com/how_12125602_draw-spirals-using-python.html',
             trinket : 'https://trinket.io/embed/python/0ed06ad269'
+        },
+        minecraft : {
+            name: 'Minecraft Pi',
+            summary: 'Warning this challenge can only be run on Raspberry Pi',
+            worksheet : 'https://www.raspberrypi.org/learning/getting-started-with-minecraft-pi/worksheet/',
+            trinket : 'https://trinket.io/embed/python/0ed06ad269'
         }
     }
 

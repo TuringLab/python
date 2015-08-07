@@ -1,8 +1,9 @@
-app.controller('HomeController',['$scope','Project',HomeController]);
+app.controller('HomeController',['$scope','Project','Minecraft',HomeController]);
 
-function HomeController($scope,Project){
+function HomeController($scope,Project,Minecraft){
 
     $scope.projects = Project.query();
+    $scope.mineCards = Minecraft.query();
 
     $scope.problems = [];
     for (var i=1; i<11; i++){
