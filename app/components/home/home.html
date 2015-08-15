@@ -1,11 +1,11 @@
 
-<div class="col-md-12">
+<!-- <div class="col-md-12">
     <div class="alert alert-danger" role="alert">
         <h3>Warning none of these challenges save your progress
             <small>- to save progress copy your code into a text editor</small>
         </h3>
     </div>
-</div>
+</div> -->
 
 <div class="col-md-6">
 
@@ -14,16 +14,23 @@
         <a ng-repeat='project in projects' href="{{project.link}}" class="list-group-item"><strong>{{project.name}}</strong> - {{project.summary}}</a>
     </div>
 
-    <h2>Python Minecraft Cards<small class="text-danger pull-right">(Raspberry Pi Only)</small></h2>
-    <div class="list-group">
-        <a ng-repeat='mineCard in mineCards' href="{{mineCard.link}}" target="_blank" class="list-group-item"><strong>{{mineCard.name}}</strong> - {{mineCard.summary}}</a>
+    <div class="jumbotron">
+      <h2>CodeChallenge - <small class="lead">Python challenges</small></h2>
+      <p>This link will open in a new tab<a class="btn btn-primary pull-right"  target="_blank" href="https://thawing-escarpment-4941.herokuapp.com" role="button">Start Challenges</a></p>
     </div>
 
 </div>
 
 <div class="col-md-6">
+
+    <h2>Python Minecraft Cards<small class="text-danger pull-right">(Raspberry Pi Only)</small></h2>
+    <div class="list-group">
+        <a ng-repeat='mineCard in mineCards' href="{{mineCard.link}}" target="_blank" class="list-group-item"><strong>{{mineCard.name}}</strong> - {{mineCard.summary}}</a>
+    </div>
+
     <h2>Euler Problem Sets</h2>
     <div class="list-group">
         <a ng-repeat="problem in problems" href="{{problem.link}}" class="list-group-item">{{problem.name}}</a>
     </div>
+
 </div>
